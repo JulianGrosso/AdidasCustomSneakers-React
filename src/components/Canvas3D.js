@@ -1,6 +1,12 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
+import {
+	ContactShadows,
+	Environment,
+	OrbitControls,
+	Html,
+	useProgress,
+} from "@react-three/drei";
 import Sneaker from "./Sneaker";
 import styled from "styled-components";
 
@@ -15,6 +21,11 @@ const screenWidth = (windowWidth) => {
 };
 
 screenWidth(window.innerWidth);
+
+const Loader = () => {
+	const { progress } = useProgress();
+	return <Html center>{Number.parseInt(progress)} % loaded</Html>;
+};
 
 const Canvas3D = () => {
 	return (
@@ -35,7 +46,7 @@ const Canvas3D = () => {
 					position={[-15, 15, 10]}
 					castShadow
 				/>
-				<Suspense fallback={null}>
+				<Suspense fallback={<Loader />}>
 					<Sneaker />
 					<Environment preset="city" />
 					<ContactShadows
