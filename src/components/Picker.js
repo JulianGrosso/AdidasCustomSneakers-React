@@ -8,7 +8,14 @@ const Picker = () => {
 	const snap = useSnapshot(state);
 
 	return (
-		<PickerContainer style={{ display: snap.current ? "block" : "none" }}>
+		<PickerContainer
+			style={
+				({ display: snap.current ? "block" : "none" },
+				{
+					transform: snap.current ? "translateX(0px)" : "translateX(800px)",
+				})
+			}
+		>
 			<h1>{snap.current}</h1>
 			<HexColorPickerStyle
 				color={snap.items[snap.current]}
@@ -29,6 +36,8 @@ const PickerContainer = styled.div`
 
 	display: flex;
 	flex-direction: column;
+
+	transition: 250ms all ease-in;
 
 	z-index: 10;
 
