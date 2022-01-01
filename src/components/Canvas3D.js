@@ -15,8 +15,12 @@ let CamaraPosition = {};
 const screenWidth = (windowWidth) => {
 	if (windowWidth <= 768) {
 		return (CamaraPosition = { position: [3, 2, 4], fov: 45 });
-	} else {
+	} else if (windowWidth > 768 && windowWidth <= 1000) {
+		return (CamaraPosition = { position: [3, 2, 4], fov: 35 });
+	} else if (windowWidth > 1000 && windowWidth <= 1200) {
 		return (CamaraPosition = { position: [3, 2, 4], fov: 30 });
+	} else {
+		return (CamaraPosition = { position: [3, 2, 4], fov: 25 });
 	}
 };
 

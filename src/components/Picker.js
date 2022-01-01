@@ -25,7 +25,6 @@ const Picker = () => {
 				color={snap.items[snap.current]}
 				onChange={(color) => (state.items[snap.current] = color)}
 			/>
-			{/* <div>{snap.items[snap.current]}</div> */}
 		</PickerContainer>
 	);
 };
@@ -70,7 +69,7 @@ const PickerContainer = styled.div`
 	}
 
 	@media screen and (max-width: 768px) {
-		top: 68%;
+		top: 64%;
 		left: 0;
 		right: 0;
 		margin-right: 0;
@@ -96,7 +95,7 @@ const HexColorInputStyle = styled(HexColorInput)`
 	width: 80px;
 	margin-top: 10px;
 	padding: 6px;
-	border: 1px solid #ddd;
+	border: 1px solid rgba(0, 0, 0, 0);
 	border-radius: 4px;
 	background: #eee;
 	outline: none;
@@ -104,7 +103,8 @@ const HexColorInputStyle = styled(HexColorInput)`
 	text-align: center;
 
 	:focus {
-		border-color: #4298ef;
+		border: 1px solid;
+		border-color: #aaa;
 	}
 
 	@media screen and (max-width: 768px) {

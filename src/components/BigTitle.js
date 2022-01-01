@@ -33,6 +33,16 @@ const Container = styled.div`
 			font-size: 5em;
 		}
 
+		@media screen and (max-width: 1000px) {
+			font-size: 4em;
+		}
+
+		@media screen and (max-width: 900px) {
+			font-size: 3em;
+			line-height: 0.8em;
+			letter-spacing: -3px;
+		}
+
 		@media screen and (max-width: 768px) {
 			font-size: 2em;
 			line-height: 0.9em;
@@ -44,6 +54,16 @@ const Container = styled.div`
 	@media screen and (max-width: 1280px) {
 		top: 38%;
 		max-width: 200px;
+	}
+
+	@media screen and (max-width: 1000px) {
+		top: 44%;
+	}
+
+	@media screen and (max-width: 900px) {
+		max-width: 240px;
+
+		top: 48%;
 	}
 
 	@media screen and (max-width: 768px) {
