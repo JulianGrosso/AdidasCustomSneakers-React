@@ -2,13 +2,13 @@ import React from "react";
 import Picker from "./components/Picker";
 import Header from "./components/Header";
 import Canvas3D from "./components/Canvas3D";
-import SneakerTitle from "./components/SneakerTitle";
+import BigTitle from "./components/BigTitle";
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<SneakerTitle />
+			<BigTitle />
 			<Picker />
 			<Canvas3D />
 		</>
