@@ -40,20 +40,22 @@ const Sneaker = () => {
 			)}'), auto`;
 			return () => (document.body.style.cursor = `default`);
 		}
-	}, [hovered]);
+	}, [hovered, snap.items]);
 
 	return (
 		<group
 			ref={group}
 			dispose={null}
-			onPointerOver={(e) => (
-				e.stopPropagation(), setHovered(e.object.material.name)
-			)}
+			onPointerOver={(e) => {
+				e.stopPropagation();
+				return setHovered(e.object.material.name);
+			}}
 			onPointerOut={(e) => e.intersections.length === 0 && setHovered(null)}
 			onPointerMissed={() => (state.current = null)}
-			onClick={(e) => (
-				e.stopPropagation(), (state.current = e.object.material.name)
-			)}
+			onClick={(e) => {
+				e.stopPropagation();
+				return (state.current = e.object.material.name);
+			}}
 		>
 			<mesh
 				receiveShadow
