@@ -1,8 +1,8 @@
-<img src="public/logo512.png" width="300" height="auto">
+<a href="https://adidascustomsneakers.netlify.app/"><img src="./public/assets/ACS_App-Showcase_05_LOW.png" width="auto" height="auto"></a>
 
-# Adidas Customs Sneakers with React & Three.js
+# Adidas Custom Sneakers with React & Three.js
 
-[Live Demo](https://sneakerscustomapp-react05-threejs.netlify.app/)
+[Live Demo](https://adidascustomsneakers.netlify.app/)
 
 _Disclaimer: This project was done for educational purposes only._
 
