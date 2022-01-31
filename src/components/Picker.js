@@ -23,7 +23,7 @@ const Picker = () => {
 					onChange={(color) => (state.items[snap.current] = color)}
 				/>
 				<InputWrap>
-					<p>Color Code: </p>
+					<p>#ColorCode: </p>
 					<HexColorInputStyle
 						color={snap.items[snap.current]}
 						onChange={(color) => (state.items[snap.current] = color)}
