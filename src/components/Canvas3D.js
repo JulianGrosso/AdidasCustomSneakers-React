@@ -35,9 +35,9 @@ const Canvas3D = () => {
 	return (
 		<CanvaContainer>
 			<Canvas shadows camera={CamaraPosition}>
-				<ambientLight intensity={0.3} />
+				<ambientLight intensity={0.25} />
 				<spotLight
-					intensity={0.5}
+					intensity={0.2}
 					angle={0.1}
 					penumbra={1}
 					position={[20, 15, 10]}

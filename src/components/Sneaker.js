@@ -7,7 +7,7 @@ export const state = proxy({
 	current: null,
 	items: {
 		laces: "#ffffff",
-		mesh: "#ffffff",
+		mesh: "#E4E4E4",
 		caps: "#ffffff",
 		inner: "#ffffff",
 		sole: "#ffffff",

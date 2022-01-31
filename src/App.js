@@ -5,6 +5,7 @@ import Canvas3D from "./components/Canvas3D";
 import BigTitle from "./components/BigTitle";
 import CallToAction from "./components/CallToAction";
 import styled from "styled-components";
+import InfoCard from "./components/InfoCard";
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 			<Picker />
 			<CallToAction />
 			<Canvas3D />
+			<InfoCard />
 		</Home>
 	);
 };
