@@ -29,6 +29,10 @@ In this MVP I focused on the user being able to customize each part of the shoe 
 - Choose your favourite colors and create your personalized sneaker.
 - Desktop and mobile-ready.
 
+<a href="https://adidascustomsneakers.netlify.app/"><img src="./public/assets/ACS_App-Showcase_06_LOW.jpg" width="auto" height="auto"></a>
+
+___
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
