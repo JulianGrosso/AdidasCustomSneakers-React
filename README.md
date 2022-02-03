@@ -1,4 +1,4 @@
-<a href="https://adidascustomsneakers.netlify.app/"><img src="./public/assets/ACS_App-Showcase_05_LOW.png" width="auto" height="auto"></a>
+<a href="https://adidascustomsneakers.netlify.app/"><img src="./github_assets/ACS_App-Showcase_05_LOW.png" width="auto" height="auto"></a>
 
 # Adidas Custom Sneakers with React & Three.js
 
@@ -29,8 +29,11 @@ In this MVP I focused on the user being able to customize each part of the shoe 
 - Choose your favourite colors and create your personalized sneaker.
 - Desktop and mobile-ready.
 
-<a href="https://adidascustomsneakers.netlify.app/"><img src="./public/assets/ACS_App-Showcase_06_LOW.jpg" width="auto" height="auto"></a>
+<a href="https://adidascustomsneakers.netlify.app/"><img src="./github_assets/ACS_App-Showcase_06_LOW.jpg" width="auto" height="auto"></a>
 
+## DEMO
+
+<a href="https://adidascustomsneakers.netlify.app/"><img src="./github_assets/ACS_App-Showcase_GIF-DEMO_01.gif" width="auto" height="auto"></a>
 ___
 
 ## Getting Started with Create React App
